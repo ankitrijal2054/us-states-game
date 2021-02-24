@@ -35,6 +35,5 @@ for state in list_of_state:
     else:
         missed_state.append(state)
 
-dic = {'StateToLearn': missed_state}
-sv = pandas.DataFrame(dic)
+sv = pandas.DataFrame(missed_state)
 sv.to_csv("state_to_learn.csv")
